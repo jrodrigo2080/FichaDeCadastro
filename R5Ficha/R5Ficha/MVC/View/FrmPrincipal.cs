@@ -17,13 +17,27 @@ namespace R5Ficha.MVC.View
         {
             InitializeComponent();
             ModelUsuario.GetUsuario(tbUsuario);
+            ModelFicha.GetFicha(tbFicha);
             txtNome.Focus();
+            organizaTbUsuario();
+            organizaTbFicha();
+        }
+        string codigo;
+
+        public void organizaTbUsuario()
+        {
             tbUsuario.Columns[0].Width = 200;
             tbUsuario.Columns[1].Width = 617;
             tbUsuario.Columns[2].Visible = false;
-            
         }
-        string codigo;
+        public void organizaTbFicha()
+        {
+            tbFicha.Columns[0].Width = 100;
+            tbFicha.Columns[1].Width = 300;
+            tbFicha.Columns[2].Width = 150;
+            tbFicha.Columns[3].Width = 100;
+            tbFicha.Columns[4].Width = 250;
+        }
         public void LimpaCampo()
         {
             txtConfSenha.Text = null;
@@ -79,12 +93,74 @@ namespace R5Ficha.MVC.View
             LimpaCampo();
             txtNome.Focus();
         }
-
         private void btEditar_Click(object sender, EventArgs e)
         {
             ModelUsuario.UpdateUsuario(txtNome.Text,txtSenha.Text,codigo);
             ModelUsuario.GetUsuario(tbUsuario);
             LimpaCampo();
+        }
+        private void btSalvarFicha_Click(object sender, EventArgs e)
+        {
+            //Esse evento trata os campos
+            var inclusao = txtInclusao.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var atualizacao = txtAtualizacao.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var participaGrupo = txtParticipaGrupo.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var temFilhos = txtTemFIlhos.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var temNetos = txtNetos.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var indigena = txtIndigenas.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var quilombola = txtQuilombola.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var estrangeiro = txtEstrangeiro.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var atividade = txtAtividadeFisic.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var medicamento = txtMedicamento.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var fuma = txtFuma.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var aposentado = txtAposentado.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var admFinanca = txtAdmFinanca.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            var financaTerceiro = txtAdmFinancaTerceiro.SelectedIndex.ToString().Equals("1") ? "S" : "N";
+            
+            var hipertenso = txtHipertenso.Checked == true ? "S" : "N";
+            var cardiaco = txtCardiaco.Checked == true ? "S" : "N";
+            var diabetico = txtDiabetico.Checked == true ? "S" : "N";
+            var asma = txtAsma.Checked == true ? "S" : "N";
+            var cancer = txtHistoricoCancer.Checked == true ? "S" : "N";
+            var colesterol = txtColesterol.Checked == true ? "S" : "N";
+            var depressao = txtDeprecao.Checked == true ? "S" : "N";
+            var alergico = txtAlergico.Checked == true ? "S" : "N";
+            var artrose = txtArtose.Checked == true ? "S" : "N";
+            var osteoporose = txtOsteoporose.Checked == true ? "S" : "N";
+            var renais = txtRenais.Checked == true ? "S" : "N";
+            var alzheimer = txtAlzheimer.Checked == true ? "S" : "N";
+            var parkinson = txtParkinson.Checked == true ? "S" : "N";
+            var epletico = txtEpletico.Checked == true ? "S" : "N";
+            var baixavisao = txtBaixaVisao.Checked == true ? "S" : "N";
+            var baixaaudicao = txtBaixaAudicao.Checked == true ? "S" : "N";
+            var cego = txtCego.Checked == true ? "S" : "N";
+            var surdo = txtSurdo.Checked == true ? "S" : "N";
+            var locomoveBem = txtLocomoveSemDifi.Checked == true ? "S" : "N";
+            var malLocomove = txtLocomoveComDific.Checked == true ? "S" : "N";
+            var usomarcha = txtUsoMArcha.Checked == true ? "S" : "N";        
+            
+            //Esse evento faz a inserção no banco
+            ModelFicha.InserirFicha(inclusao,txtData.Text, atualizacao, txtDataInclusao.Text, txtNomeCadastro.Text,
+                txtDataNasc.Text, txtSexo.Text, txtNis.Text,txtNaturalidade.Text,txtUfNaturalidade.Text,
+                txtRg.Text,txtCpf.Text,txtOrgaoEmisor.Text,txtTelefone.Text,
+                txtEndereco.Text,txtCep.Text,txtContatoEmergencia.Text,txtFoneEmergencia.Text,
+                txtEtnia.Text,participaGrupo,txtQualGrupo.Text,txtEstadoCivil.Text,
+                txtReligiao.Text,temFilhos,txtQtsFilhos.Text,temNetos,txtQtsNetos.Text,indigena,
+                txtReservaIndigena.Text,quilombola,txtComunidade.Text,
+                estrangeiro,txtPais.Text,txtEscolaridade.Text,txtUltimaSerie.Text,txtMoraComQuem.Text,
+                aposentado,txtSituacaoFinanceira.Text,txtMEdiaSalarial.Text,txtProfissao.Text,txtMoradia.Text,
+                admFinanca, financaTerceiro, txtTipoTransport.Text, malLocomove,
+                locomoveBem,baixavisao,
+                baixaaudicao,usomarcha,cego,surdo,fuma,txtBebe.Text,
+                hipertenso,cardiaco,
+                diabetico,asma,cancer,colesterol,epletico,
+                depressao,alergico,artrose,
+                osteoporose,renais,alzheimer,parkinson,medicamento,
+                txtQualMEdicamento.Text, txtOutraDoenca.Text, atividade,txtQualAtividade.Text, txtAutonomia.Text, 
+                txtSituacao.Text, txtUfEmissor.Text
+                );
+            
+            ModelFicha.GetFicha(tbFicha);
         }
     }
 }
