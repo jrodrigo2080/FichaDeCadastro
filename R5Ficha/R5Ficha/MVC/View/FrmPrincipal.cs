@@ -1,4 +1,5 @@
 ﻿using R5Ficha.MVC.Model;
+using R5Ficha.Relatorio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,12 +19,15 @@ namespace R5Ficha.MVC.View
             InitializeComponent();
             ModelUsuario.GetUsuario(tbUsuario);
             ModelFicha.GetFicha(tbFicha);
+            ModelOficina.GetOficina(dbOficina);
             txtNome.Focus();
             organizaTbUsuario();
             organizaTbFicha();
+            organizaTbOficina();
+            Util.itensUtil.preencheComboBoxBotoes(cbOficina);
         }
-        string codigo;
-
+        string codigo ="";
+        string codigoOficina="";
         public void organizaTbUsuario()
         {
             tbUsuario.Columns[0].Width = 200;
@@ -38,6 +42,11 @@ namespace R5Ficha.MVC.View
             tbFicha.Columns[3].Width = 100;
             tbFicha.Columns[4].Width = 250;
         }
+        public void organizaTbOficina()
+        {
+            dbOficina.Columns[0].Width = 100;
+            dbOficina.Columns[1].Width = 250;
+        }
         public void LimpaCampo()
         {
             txtConfSenha.Text = null;
@@ -46,7 +55,8 @@ namespace R5Ficha.MVC.View
             codigo = null;
             btNovo.Enabled = true;
             btSalvar.Enabled = true;
-        }        
+        } 
+        //------ Função dos Botoes
         private void btSalvar_Click(object sender, EventArgs e)
         {
             if ((txtSenha.Text == txtConfSenha.Text) && (txtSenha.Text !="") && (txtConfSenha.Text!="") && (txtNome.Text != ""))
@@ -73,7 +83,7 @@ namespace R5Ficha.MVC.View
             txtConfSenha.Text = tbUsuario.CurrentRow.Cells[2].Value.ToString();
             btNovo.Enabled = false;
             btSalvar.Enabled = false;
-        }
+        }        
         private void btDeletar_Click(object sender, EventArgs e)
         {
             if(codigo != "" && codigo!= null)
@@ -137,10 +147,19 @@ namespace R5Ficha.MVC.View
             var surdo = txtSurdo.Checked == true ? "S" : "N";
             var locomoveBem = txtLocomoveSemDifi.Checked == true ? "S" : "N";
             var malLocomove = txtLocomoveComDific.Checked == true ? "S" : "N";
-            var usomarcha = txtUsoMArcha.Checked == true ? "S" : "N";        
-            
+            var usomarcha = txtUsoMArcha.Checked == true ? "S" : "N";
+
+            FrmRelatorioFicha rel = new FrmRelatorioFicha();
+            rel.GeraPDF(inclusao,data: txtData.Text, atualizacao, txtDataInclusao.Text,txtNomeCadastro.Text,cbOficina.Text,
+                txtDataNasc.Text,txtSexo.Text,txtNis.Text,txtNaturalidade.Text,txtUfNaturalidade.Text,txtRg.Text,txtCpf.Text,
+                txtOrgaoEmisor.Text,txtUfEmissor.Text,txtTelefone.Text,txtCep.Text,txtEndereco.Text,txtContatoEmergencia.Text,
+                txtFoneEmergencia.Text,txtEtnia.Text,txtEstadoCivil.Text,txtReligiao.Text,txtParticipaGrupo.Text,txtQualGrupo.Text,
+                txtTemFIlhos.Text,txtQtsFilhos.Text,txtNetos.Text,txtQtsNetos.Text,txtIndigenas.Text,txtReservaIndigena.Text,
+                txtQuilombola.Text,txtComunidade.Text,txtEstrangeiro.Text,txtPais.Text);
+            rel.ShowDialog();
+
             //Esse evento faz a inserção no banco
-            ModelFicha.InserirFicha(inclusao,txtData.Text, atualizacao, txtDataInclusao.Text, txtNomeCadastro.Text,
+            ModelFicha.InserirFicha(cbOficina.Text,inclusao,txtData.Text, atualizacao, txtDataInclusao.Text, txtNomeCadastro.Text,
                 txtDataNasc.Text, txtSexo.Text, txtNis.Text,txtNaturalidade.Text,txtUfNaturalidade.Text,
                 txtRg.Text,txtCpf.Text,txtOrgaoEmisor.Text,txtTelefone.Text,
                 txtEndereco.Text,txtCep.Text,txtContatoEmergencia.Text,txtFoneEmergencia.Text,
@@ -161,6 +180,46 @@ namespace R5Ficha.MVC.View
                 );
             
             ModelFicha.GetFicha(tbFicha);
+        }
+        private void btExportar_Click(object sender, EventArgs e)
+        {
+            var inclusao = "S";
+            FrmRelatorioFicha rel = new FrmRelatorioFicha();
+            //rel.GeraPDF(inclusao);
+            rel.ShowDialog();
+        }
+        private void btSalvarOficina_Click(object sender, EventArgs e)
+        {
+            ModelOficina.InserirOficina(txtOficina.Text);
+            ModelOficina.GetOficina(dbOficina);
+        }
+        private void dbOficina_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            codigoOficina = dbOficina.CurrentRow.Cells[0].Value.ToString();
+            txtOficina.Text = dbOficina.CurrentRow.Cells[1].Value.ToString();
+            btNovoOficina.Enabled = false;
+            btSalvarOficina.Enabled = false;
+        }
+        private void btDeletarOficina_Click(object sender, EventArgs e)
+        {
+            ModelOficina.DeleteOficina(codigoOficina);
+            ModelOficina.GetOficina(dbOficina);
+            btNovoOficina.Enabled = true;
+            btSalvarOficina.Enabled = true;
+        }
+        private void btEditarOficina_Click(object sender, EventArgs e)
+        {
+            ModelOficina.UpdateOficina(txtOficina.Text, codigoOficina);
+            ModelOficina.GetOficina(dbOficina);
+            btNovoOficina.Enabled = true;
+            btSalvarOficina.Enabled = true;
+        }
+        private void dbOficina_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            codigoOficina = dbOficina.CurrentRow.Cells[0].Value.ToString();
+            txtOficina.Text = dbOficina.CurrentRow.Cells[1].Value.ToString();
+            btNovoOficina.Enabled = false;
+            btSalvarOficina.Enabled = false;
         }
     }
 }

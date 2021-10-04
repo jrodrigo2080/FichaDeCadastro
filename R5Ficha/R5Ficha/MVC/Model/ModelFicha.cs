@@ -12,7 +12,7 @@ namespace R5Ficha.MVC.Model
     public class ModelFicha
     {
              
-        public static void InserirFicha(
+        public static void InserirFicha(string oficina,
             string inclusao,string data,string atualizacao,string dataCriacao, string nome, string dataNasc,
             string sexo, string nis, string cidade, string uf,string rg,string cpf, string emissor, string telefone,
             string endereco, string cep, string contatoEmergencia, string foneEmergencia, string etnia, string participaGrupo,
@@ -30,7 +30,6 @@ namespace R5Ficha.MVC.Model
             {
                 try
                 {
-                    MessageBox.Show(nome);
                     con.Open();
                     var sql = $"INSERT INTO FICHA (" +
                         $"INCLUSAO,DATA,ATUALIZACAO,DATACRIACAO,NOME,DATANASC,SEXO,NIS," +
@@ -40,7 +39,7 @@ namespace R5Ficha.MVC.Model
                         $"MEDIASALARIAL,PROFISSAO,MORADIA,ADMFINANCA,ADMFINANCATERCEIRO,TIPOTRANSPORTE,DIFICULDADELOCOMOVE,SEMDIFICULDADELOCOMOVE," +
                         $"BAIXAVISAO,BAIXAAUDICAO,AUXILIOMACHA,CEGO,SURDO,FUMA,BEBE,HIPERTENSO,CARDIACO,DIABETICO,ASMA,CANCERFAMILIA,COLESTEROLELEVADO," +
                         $"EPLETICO,DEPRESSAO,ALERGICO,ARTOSE,OSTEOPOROSE,RENAIS,ALZHEIMER,PARKINSON,USAMEDICAMENTO,QUALMEDICAMENTO,OUTRADOENCA,ATIVIDADEFISICA," +
-                        $"QUALATIVIDADE,AUTONOMIA,SITUACAO,UFEMISSOR)" +
+                        $"QUALATIVIDADE,AUTONOMIA,SITUACAO,UFEMISSOR,OFICINA)" +
                         $"VALUES(" +
                         $"'" + inclusao + "','" + data + "','" + atualizacao + "','" + dataCriacao + "','" + nome + "','" + dataNasc + "','" + sexo + "','" + nis + "'," +
                         $"'" + cidade + "','" + uf + "','" + rg + "','" + cpf + "','" + emissor + "','" + telefone + "','" + endereco + "','" + cep + "','" + contatoEmergencia + "','" + foneEmergencia + "','" + etnia + "'," +
@@ -49,7 +48,7 @@ namespace R5Ficha.MVC.Model
                         $"'" + mediaSalarial + "','" + profissao + "','" + moradia + "','" + admFinancia + "','" + admFinanciaTerceiro + "','" + tipoTransporte + "','" + dificuldadeLocomocao + "','" + semDificuldadeLocomocao + "'," +
                         $"'" + baixaVisao + "','" + baixaVisao + "','" + auxiliomacha + "','" + cego + "','" + surdo + "','" + fuma + "','" + bebe + "','" + hipertenso + "','" + cardiaco + "','" + diabetico + "','" + asma + "','" + cancerFamilia + "','" + colesterolElevado + "'," +
                         $"'" + epletico + "','" + depressao + "','" + alergico + "','" + artose + "','" + osteoporose + "','" + renais + "','" + alzheimer + "','" + parkinson + "','" + usaMedicamento + "','" + qualMedicamento + "','" + outraDoenca + "','" + atividadeFisica + "'," +
-                        $"'" + qualAtividadeFisica + "','" + autonomia + "','" + situacao + "','" + ufEmissor + "')";
+                        $"'" + qualAtividadeFisica + "','" + autonomia + "','" + situacao + "','" + ufEmissor + "','" + oficina+"')";
                         
                     FbCommand comando = new FbCommand(sql, con);
                     comando.ExecuteNonQuery();
@@ -67,7 +66,7 @@ namespace R5Ficha.MVC.Model
         }
 
 
-        public static void UpdateFicha(
+        public static void UpdateFicha(string oficina,
             string inclusao, string data, string atualizacao, string dataCriacao, string nome, string dataNasc,
             string sexo, string nis, string cidade, string uf, string rg, string cpf, string emissor, string telefone,
             string endereco, string cep, string contatoEmergencia, string foneEmergencia, string etnia, string participaGrupo,

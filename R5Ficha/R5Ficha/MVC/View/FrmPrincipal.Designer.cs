@@ -39,6 +39,11 @@ namespace R5Ficha.MVC.View
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
@@ -47,6 +52,10 @@ namespace R5Ficha.MVC.View
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.btExportar = new MaterialSkin.Controls.MaterialButton();
             this.materialTextBox224 = new MaterialSkin.Controls.MaterialTextBox2();
             this.tbFicha = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -59,9 +68,19 @@ namespace R5Ficha.MVC.View
             this.txtConfSenha = new MaterialSkin.Controls.MaterialTextBox();
             this.txtSenha = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNome = new MaterialSkin.Controls.MaterialTextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtOficina = new MaterialSkin.Controls.MaterialTextBox();
+            this.dbOficina = new System.Windows.Forms.DataGridView();
+            this.btEditarOficina = new MaterialSkin.Controls.MaterialButton();
+            this.btNovoOficina = new MaterialSkin.Controls.MaterialButton();
+            this.btCancelaroficina = new MaterialSkin.Controls.MaterialButton();
+            this.btDeletarOficina = new MaterialSkin.Controls.MaterialButton();
+            this.btSalvarOficina = new MaterialSkin.Controls.MaterialButton();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.cbOficina = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
             this.txtUltimaSerie = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtUfEmissor = new MaterialSkin.Controls.MaterialComboBox();
             this.txtDataNasc = new System.Windows.Forms.DateTimePicker();
@@ -164,10 +183,6 @@ namespace R5Ficha.MVC.View
             this.txtCardiaco = new MaterialSkin.Controls.MaterialCheckbox();
             this.txtHipertenso = new MaterialSkin.Controls.MaterialCheckbox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btExportar = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -177,6 +192,8 @@ namespace R5Ficha.MVC.View
             ((System.ComponentModel.ISupportInitialize)(this.tbFicha)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbUsuario)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbOficina)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -308,6 +325,7 @@ namespace R5Ficha.MVC.View
             // 
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -344,6 +362,91 @@ namespace R5Ficha.MVC.View
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1288, 836);
             this.panel1.TabIndex = 0;
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.materialButton5.AutoSize = false;
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = null;
+            this.materialButton5.Location = new System.Drawing.Point(1127, 35);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.materialButton5.Size = new System.Drawing.Size(65, 36);
+            this.materialButton5.TabIndex = 6;
+            this.materialButton5.Text = "Excluir";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            // 
+            // materialButton4
+            // 
+            this.materialButton4.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.materialButton4.AutoSize = false;
+            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton4.Depth = 0;
+            this.materialButton4.HighEmphasis = true;
+            this.materialButton4.Icon = null;
+            this.materialButton4.Location = new System.Drawing.Point(986, 35);
+            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton4.Name = "materialButton4";
+            this.materialButton4.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.materialButton4.Size = new System.Drawing.Size(65, 36);
+            this.materialButton4.TabIndex = 5;
+            this.materialButton4.Text = "Novo";
+            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton4.UseAccentColor = false;
+            this.materialButton4.UseVisualStyleBackColor = true;
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.materialButton2.AutoSize = false;
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(1057, 35);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.materialButton2.Size = new System.Drawing.Size(64, 36);
+            this.materialButton2.TabIndex = 4;
+            this.materialButton2.Text = "Editar";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            // 
+            // btExportar
+            // 
+            this.btExportar.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.btExportar.AutoSize = false;
+            this.btExportar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btExportar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btExportar.Depth = 0;
+            this.btExportar.HighEmphasis = true;
+            this.btExportar.Icon = null;
+            this.btExportar.Location = new System.Drawing.Point(1200, 35);
+            this.btExportar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btExportar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btExportar.Name = "btExportar";
+            this.btExportar.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btExportar.Size = new System.Drawing.Size(84, 36);
+            this.btExportar.TabIndex = 3;
+            this.btExportar.Text = "Exportar";
+            this.btExportar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btExportar.UseAccentColor = false;
+            this.btExportar.UseVisualStyleBackColor = true;
+            this.btExportar.Click += new System.EventHandler(this.btExportar_Click);
             // 
             // materialTextBox224
             // 
@@ -652,6 +755,202 @@ namespace R5Ficha.MVC.View
             this.txtNome.Text = "";
             this.txtNome.TrailingIcon = null;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.txtOficina);
+            this.tabPage3.Controls.Add(this.dbOficina);
+            this.tabPage3.Controls.Add(this.btEditarOficina);
+            this.tabPage3.Controls.Add(this.btNovoOficina);
+            this.tabPage3.Controls.Add(this.btCancelaroficina);
+            this.tabPage3.Controls.Add(this.btDeletarOficina);
+            this.tabPage3.Controls.Add(this.btSalvarOficina);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1294, 842);
+            this.tabPage3.TabIndex = 4;
+            this.tabPage3.Text = "Cadastrar Oficina";
+            // 
+            // txtOficina
+            // 
+            this.txtOficina.BackColor = System.Drawing.Color.White;
+            this.txtOficina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOficina.Depth = 0;
+            this.txtOficina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtOficina.Hint = "Oficina";
+            this.txtOficina.LeadingIcon = null;
+            this.txtOficina.Location = new System.Drawing.Point(19, 25);
+            this.txtOficina.MaxLength = 50;
+            this.txtOficina.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtOficina.Multiline = false;
+            this.txtOficina.Name = "txtOficina";
+            this.txtOficina.Size = new System.Drawing.Size(440, 50);
+            this.txtOficina.TabIndex = 16;
+            this.txtOficina.Text = "";
+            this.txtOficina.TrailingIcon = null;
+            // 
+            // dbOficina
+            // 
+            this.dbOficina.AllowUserToAddRows = false;
+            this.dbOficina.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Blue;
+            this.dbOficina.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dbOficina.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dbOficina.BackgroundColor = System.Drawing.Color.White;
+            this.dbOficina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dbOficina.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbOficina.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dbOficina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbOficina.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dbOficina.GridColor = System.Drawing.Color.White;
+            this.dbOficina.Location = new System.Drawing.Point(17, 153);
+            this.dbOficina.Name = "dbOficina";
+            this.dbOficina.ReadOnly = true;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbOficina.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dbOficina.RowHeadersWidth = 60;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Blue;
+            this.dbOficina.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            this.dbOficina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dbOficina.Size = new System.Drawing.Size(442, 566);
+            this.dbOficina.TabIndex = 15;
+            this.dbOficina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbOficina_CellClick);
+            this.dbOficina.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbOficina_CellContentClick);
+            // 
+            // btEditarOficina
+            // 
+            this.btEditarOficina.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.btEditarOficina.AutoSize = false;
+            this.btEditarOficina.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btEditarOficina.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btEditarOficina.Depth = 0;
+            this.btEditarOficina.HighEmphasis = true;
+            this.btEditarOficina.Icon = null;
+            this.btEditarOficina.Location = new System.Drawing.Point(176, 88);
+            this.btEditarOficina.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btEditarOficina.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btEditarOficina.Name = "btEditarOficina";
+            this.btEditarOficina.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btEditarOficina.Size = new System.Drawing.Size(76, 47);
+            this.btEditarOficina.TabIndex = 14;
+            this.btEditarOficina.Text = "Editar";
+            this.btEditarOficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btEditarOficina.UseAccentColor = false;
+            this.btEditarOficina.UseVisualStyleBackColor = true;
+            this.btEditarOficina.Click += new System.EventHandler(this.btEditarOficina_Click);
+            // 
+            // btNovoOficina
+            // 
+            this.btNovoOficina.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.btNovoOficina.AutoSize = false;
+            this.btNovoOficina.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btNovoOficina.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btNovoOficina.Depth = 0;
+            this.btNovoOficina.HighEmphasis = true;
+            this.btNovoOficina.Icon = null;
+            this.btNovoOficina.Location = new System.Drawing.Point(19, 88);
+            this.btNovoOficina.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btNovoOficina.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btNovoOficina.Name = "btNovoOficina";
+            this.btNovoOficina.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btNovoOficina.Size = new System.Drawing.Size(65, 47);
+            this.btNovoOficina.TabIndex = 13;
+            this.btNovoOficina.Text = "Novo";
+            this.btNovoOficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btNovoOficina.UseAccentColor = false;
+            this.btNovoOficina.UseVisualStyleBackColor = true;
+            // 
+            // btCancelaroficina
+            // 
+            this.btCancelaroficina.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.btCancelaroficina.AutoSize = false;
+            this.btCancelaroficina.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btCancelaroficina.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btCancelaroficina.Depth = 0;
+            this.btCancelaroficina.HighEmphasis = true;
+            this.btCancelaroficina.Icon = null;
+            this.btCancelaroficina.Location = new System.Drawing.Point(348, 88);
+            this.btCancelaroficina.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btCancelaroficina.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btCancelaroficina.Name = "btCancelaroficina";
+            this.btCancelaroficina.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btCancelaroficina.Size = new System.Drawing.Size(100, 47);
+            this.btCancelaroficina.TabIndex = 12;
+            this.btCancelaroficina.Text = "Cancelar";
+            this.btCancelaroficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btCancelaroficina.UseAccentColor = false;
+            this.btCancelaroficina.UseVisualStyleBackColor = true;
+            // 
+            // btDeletarOficina
+            // 
+            this.btDeletarOficina.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.btDeletarOficina.AutoSize = false;
+            this.btDeletarOficina.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btDeletarOficina.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btDeletarOficina.Depth = 0;
+            this.btDeletarOficina.HighEmphasis = true;
+            this.btDeletarOficina.Icon = null;
+            this.btDeletarOficina.Location = new System.Drawing.Point(260, 88);
+            this.btDeletarOficina.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btDeletarOficina.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btDeletarOficina.Name = "btDeletarOficina";
+            this.btDeletarOficina.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btDeletarOficina.Size = new System.Drawing.Size(80, 47);
+            this.btDeletarOficina.TabIndex = 11;
+            this.btDeletarOficina.Text = "Deletar";
+            this.btDeletarOficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btDeletarOficina.UseAccentColor = false;
+            this.btDeletarOficina.UseVisualStyleBackColor = true;
+            this.btDeletarOficina.Click += new System.EventHandler(this.btDeletarOficina_Click);
+            // 
+            // btSalvarOficina
+            // 
+            this.btSalvarOficina.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
+            this.btSalvarOficina.AutoSize = false;
+            this.btSalvarOficina.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btSalvarOficina.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btSalvarOficina.Depth = 0;
+            this.btSalvarOficina.HighEmphasis = true;
+            this.btSalvarOficina.Icon = null;
+            this.btSalvarOficina.Location = new System.Drawing.Point(92, 88);
+            this.btSalvarOficina.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btSalvarOficina.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btSalvarOficina.Name = "btSalvarOficina";
+            this.btSalvarOficina.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btSalvarOficina.Size = new System.Drawing.Size(76, 47);
+            this.btSalvarOficina.TabIndex = 10;
+            this.btSalvarOficina.Text = "Salvar";
+            this.btSalvarOficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btSalvarOficina.UseAccentColor = false;
+            this.btSalvarOficina.UseVisualStyleBackColor = true;
+            this.btSalvarOficina.Click += new System.EventHandler(this.btSalvarOficina_Click);
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.White;
@@ -682,6 +981,8 @@ namespace R5Ficha.MVC.View
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.White;
+            this.tabPage5.Controls.Add(this.cbOficina);
+            this.tabPage5.Controls.Add(this.materialLabel23);
             this.tabPage5.Controls.Add(this.txtUltimaSerie);
             this.tabPage5.Controls.Add(this.txtUfEmissor);
             this.tabPage5.Controls.Add(this.txtDataNasc);
@@ -716,6 +1017,44 @@ namespace R5Ficha.MVC.View
             this.tabPage5.Size = new System.Drawing.Size(1280, 732);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Dados Pessoais           ";
+            // 
+            // cbOficina
+            // 
+            this.cbOficina.AutoResize = false;
+            this.cbOficina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbOficina.Depth = 0;
+            this.cbOficina.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbOficina.DropDownHeight = 174;
+            this.cbOficina.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOficina.DropDownWidth = 121;
+            this.cbOficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbOficina.ForeColor = System.Drawing.Color.White;
+            this.cbOficina.FormattingEnabled = true;
+            this.cbOficina.IntegralHeight = false;
+            this.cbOficina.ItemHeight = 43;
+            this.cbOficina.Items.AddRange(new object[] {
+            "Selecione",
+            "Sim",
+            "Não"});
+            this.cbOficina.Location = new System.Drawing.Point(659, 29);
+            this.cbOficina.MaxDropDownItems = 4;
+            this.cbOficina.MouseState = MaterialSkin.MouseState.OUT;
+            this.cbOficina.Name = "cbOficina";
+            this.cbOficina.Size = new System.Drawing.Size(171, 49);
+            this.cbOficina.StartIndex = 0;
+            this.cbOficina.TabIndex = 100;
+            // 
+            // materialLabel23
+            // 
+            this.materialLabel23.AutoSize = true;
+            this.materialLabel23.Depth = 0;
+            this.materialLabel23.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel23.Location = new System.Drawing.Point(663, 7);
+            this.materialLabel23.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel23.Name = "materialLabel23";
+            this.materialLabel23.Size = new System.Drawing.Size(52, 19);
+            this.materialLabel23.TabIndex = 101;
+            this.materialLabel23.Text = "Oficina";
             // 
             // txtUltimaSerie
             // 
@@ -946,8 +1285,8 @@ namespace R5Ficha.MVC.View
             this.txtSexo.ItemHeight = 43;
             this.txtSexo.Items.AddRange(new object[] {
             "Sexo",
-            "Masculino",
-            "Feminino"});
+            "M",
+            "F"});
             this.txtSexo.Location = new System.Drawing.Point(224, 170);
             this.txtSexo.MaxDropDownItems = 4;
             this.txtSexo.MouseState = MaterialSkin.MouseState.OUT;
@@ -1240,9 +1579,9 @@ namespace R5Ficha.MVC.View
             // 
             this.txtDataInclusao.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataInclusao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDataInclusao.Location = new System.Drawing.Point(627, 34);
+            this.txtDataInclusao.Location = new System.Drawing.Point(460, 43);
             this.txtDataInclusao.Name = "txtDataInclusao";
-            this.txtDataInclusao.Size = new System.Drawing.Size(203, 35);
+            this.txtDataInclusao.Size = new System.Drawing.Size(193, 35);
             this.txtDataInclusao.TabIndex = 17;
             // 
             // txtInclusao
@@ -1267,7 +1606,7 @@ namespace R5Ficha.MVC.View
             this.txtInclusao.MaxDropDownItems = 4;
             this.txtInclusao.MouseState = MaterialSkin.MouseState.OUT;
             this.txtInclusao.Name = "txtInclusao";
-            this.txtInclusao.Size = new System.Drawing.Size(188, 49);
+            this.txtInclusao.Size = new System.Drawing.Size(149, 49);
             this.txtInclusao.StartIndex = 0;
             this.txtInclusao.TabIndex = 10;
             // 
@@ -1276,7 +1615,7 @@ namespace R5Ficha.MVC.View
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(634, 7);
+            this.materialLabel4.Location = new System.Drawing.Point(457, 7);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(196, 19);
@@ -1301,11 +1640,11 @@ namespace R5Ficha.MVC.View
             "Selecione",
             "Sim",
             "Não"});
-            this.txtAtualizacao.Location = new System.Drawing.Point(433, 29);
+            this.txtAtualizacao.Location = new System.Drawing.Point(330, 29);
             this.txtAtualizacao.MaxDropDownItems = 4;
             this.txtAtualizacao.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAtualizacao.Name = "txtAtualizacao";
-            this.txtAtualizacao.Size = new System.Drawing.Size(188, 49);
+            this.txtAtualizacao.Size = new System.Drawing.Size(124, 49);
             this.txtAtualizacao.StartIndex = 0;
             this.txtAtualizacao.TabIndex = 11;
             // 
@@ -1313,9 +1652,9 @@ namespace R5Ficha.MVC.View
             // 
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtData.Location = new System.Drawing.Point(206, 34);
+            this.txtData.Location = new System.Drawing.Point(167, 43);
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(214, 35);
+            this.txtData.Size = new System.Drawing.Size(157, 35);
             this.txtData.TabIndex = 15;
             // 
             // materialLabel1
@@ -1335,7 +1674,7 @@ namespace R5Ficha.MVC.View
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(221, 7);
+            this.materialLabel3.Location = new System.Drawing.Point(165, 7);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(39, 19);
@@ -1347,7 +1686,7 @@ namespace R5Ficha.MVC.View
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(434, 7);
+            this.materialLabel2.Location = new System.Drawing.Point(327, 7);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(89, 19);
@@ -2899,90 +3238,6 @@ namespace R5Ficha.MVC.View
             this.panel2.Size = new System.Drawing.Size(1288, 836);
             this.panel2.TabIndex = 2;
             // 
-            // btExportar
-            // 
-            this.btExportar.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
-            this.btExportar.AutoSize = false;
-            this.btExportar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btExportar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btExportar.Depth = 0;
-            this.btExportar.HighEmphasis = true;
-            this.btExportar.Icon = null;
-            this.btExportar.Location = new System.Drawing.Point(1200, 35);
-            this.btExportar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btExportar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btExportar.Name = "btExportar";
-            this.btExportar.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.btExportar.Size = new System.Drawing.Size(84, 36);
-            this.btExportar.TabIndex = 3;
-            this.btExportar.Text = "Exportar";
-            this.btExportar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btExportar.UseAccentColor = false;
-            this.btExportar.UseVisualStyleBackColor = true;
-            // 
-            // materialButton2
-            // 
-            this.materialButton2.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(1057, 35);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.materialButton2.Size = new System.Drawing.Size(64, 36);
-            this.materialButton2.TabIndex = 4;
-            this.materialButton2.Text = "Editar";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialButton4
-            // 
-            this.materialButton4.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
-            this.materialButton4.AutoSize = false;
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(986, 35);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.materialButton4.Size = new System.Drawing.Size(65, 36);
-            this.materialButton4.TabIndex = 5;
-            this.materialButton4.Text = "Novo";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
-            // 
-            // materialButton5
-            // 
-            this.materialButton5.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
-            this.materialButton5.AutoSize = false;
-            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton5.Depth = 0;
-            this.materialButton5.HighEmphasis = true;
-            this.materialButton5.Icon = null;
-            this.materialButton5.Location = new System.Drawing.Point(1127, 35);
-            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton5.Name = "materialButton5";
-            this.materialButton5.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.materialButton5.Size = new System.Drawing.Size(65, 36);
-            this.materialButton5.TabIndex = 6;
-            this.materialButton5.Text = "Excluir";
-            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton5.UseAccentColor = false;
-            this.materialButton5.UseVisualStyleBackColor = true;
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3008,6 +3263,8 @@ namespace R5Ficha.MVC.View
             ((System.ComponentModel.ISupportInitialize)(this.tbFicha)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tbUsuario)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dbOficina)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
@@ -3154,5 +3411,15 @@ namespace R5Ficha.MVC.View
         private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialButton btExportar;
         private MaterialSkin.Controls.MaterialButton materialButton5;
+        private System.Windows.Forms.TabPage tabPage3;
+        private MaterialSkin.Controls.MaterialButton btEditarOficina;
+        private MaterialSkin.Controls.MaterialButton btNovoOficina;
+        private MaterialSkin.Controls.MaterialButton btCancelaroficina;
+        private MaterialSkin.Controls.MaterialButton btDeletarOficina;
+        private MaterialSkin.Controls.MaterialButton btSalvarOficina;
+        private System.Windows.Forms.DataGridView dbOficina;
+        private MaterialSkin.Controls.MaterialTextBox txtOficina;
+        private MaterialSkin.Controls.MaterialComboBox cbOficina;
+        private MaterialSkin.Controls.MaterialLabel materialLabel23;
     }
 }
