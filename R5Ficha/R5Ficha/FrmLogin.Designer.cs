@@ -30,8 +30,8 @@ namespace R5Ficha
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtUser = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtPas = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -39,61 +39,61 @@ namespace R5Ficha
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // materialTextBox21
+            // txtUser
             // 
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.Hint = "Usuário";
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(263, 123);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = false;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(305, 48);
-            this.materialTextBox21.TabIndex = 0;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.txtUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtUser.Depth = 0;
+            this.txtUser.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUser.HideSelection = true;
+            this.txtUser.Hint = "Usuário";
+            this.txtUser.LeadingIcon = null;
+            this.txtUser.Location = new System.Drawing.Point(263, 123);
+            this.txtUser.MaxLength = 32767;
+            this.txtUser.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.PasswordChar = '\0';
+            this.txtUser.PrefixSuffixText = null;
+            this.txtUser.ReadOnly = false;
+            this.txtUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtUser.SelectedText = "";
+            this.txtUser.SelectionLength = 0;
+            this.txtUser.SelectionStart = 0;
+            this.txtUser.ShortcutsEnabled = true;
+            this.txtUser.Size = new System.Drawing.Size(305, 48);
+            this.txtUser.TabIndex = 0;
+            this.txtUser.TabStop = false;
+            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUser.TrailingIcon = null;
+            this.txtUser.UseSystemPasswordChar = false;
             // 
-            // materialTextBox22
+            // txtPas
             // 
-            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox22.HideSelection = true;
-            this.materialTextBox22.Hint = "Senha";
-            this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(263, 199);
-            this.materialTextBox22.MaxLength = 32767;
-            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox22.Name = "materialTextBox22";
-            this.materialTextBox22.PasswordChar = '●';
-            this.materialTextBox22.PrefixSuffixText = null;
-            this.materialTextBox22.ReadOnly = false;
-            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox22.SelectedText = "";
-            this.materialTextBox22.SelectionLength = 0;
-            this.materialTextBox22.SelectionStart = 0;
-            this.materialTextBox22.ShortcutsEnabled = true;
-            this.materialTextBox22.Size = new System.Drawing.Size(305, 48);
-            this.materialTextBox22.TabIndex = 1;
-            this.materialTextBox22.TabStop = false;
-            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox22.TrailingIcon = null;
-            this.materialTextBox22.UseSystemPasswordChar = true;
+            this.txtPas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtPas.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPas.Depth = 0;
+            this.txtPas.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPas.HideSelection = true;
+            this.txtPas.Hint = "Senha";
+            this.txtPas.LeadingIcon = null;
+            this.txtPas.Location = new System.Drawing.Point(263, 199);
+            this.txtPas.MaxLength = 32767;
+            this.txtPas.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtPas.Name = "txtPas";
+            this.txtPas.PasswordChar = '●';
+            this.txtPas.PrefixSuffixText = null;
+            this.txtPas.ReadOnly = false;
+            this.txtPas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPas.SelectedText = "";
+            this.txtPas.SelectionLength = 0;
+            this.txtPas.SelectionStart = 0;
+            this.txtPas.ShortcutsEnabled = true;
+            this.txtPas.Size = new System.Drawing.Size(305, 48);
+            this.txtPas.TabIndex = 1;
+            this.txtPas.TabStop = false;
+            this.txtPas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPas.TrailingIcon = null;
+            this.txtPas.UseSystemPasswordChar = true;
             // 
             // materialButton1
             // 
@@ -136,6 +136,7 @@ namespace R5Ficha
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FrmLogin
@@ -146,8 +147,8 @@ namespace R5Ficha
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.materialTextBox22);
-            this.Controls.Add(this.materialTextBox21);
+            this.Controls.Add(this.txtPas);
+            this.Controls.Add(this.txtUser);
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -161,8 +162,8 @@ namespace R5Ficha
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
+        private MaterialSkin.Controls.MaterialTextBox2 txtUser;
+        private MaterialSkin.Controls.MaterialTextBox2 txtPas;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

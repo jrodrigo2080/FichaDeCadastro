@@ -150,12 +150,16 @@ namespace R5Ficha.MVC.View
             var usomarcha = txtUsoMArcha.Checked == true ? "S" : "N";
 
             FrmRelatorioFicha rel = new FrmRelatorioFicha();
-            rel.GeraPDF(inclusao,data: txtData.Text, atualizacao, txtDataInclusao.Text,txtNomeCadastro.Text,cbOficina.Text,
-                txtDataNasc.Text,txtSexo.Text,txtNis.Text,txtNaturalidade.Text,txtUfNaturalidade.Text,txtRg.Text,txtCpf.Text,
-                txtOrgaoEmisor.Text,txtUfEmissor.Text,txtTelefone.Text,txtCep.Text,txtEndereco.Text,txtContatoEmergencia.Text,
-                txtFoneEmergencia.Text,txtEtnia.Text,txtEstadoCivil.Text,txtReligiao.Text,txtParticipaGrupo.Text,txtQualGrupo.Text,
-                txtTemFIlhos.Text,txtQtsFilhos.Text,txtNetos.Text,txtQtsNetos.Text,txtIndigenas.Text,txtReservaIndigena.Text,
-                txtQuilombola.Text,txtComunidade.Text,txtEstrangeiro.Text,txtPais.Text);
+            rel.GeraPDF(inclusao, data: txtData.Text, atualizacao, txtDataInclusao.Text, txtNomeCadastro.Text, cbOficina.Text,
+                txtDataNasc.Text, txtSexo.Text, txtNis.Text, txtNaturalidade.Text, txtUfNaturalidade.Text, txtRg.Text, txtCpf.Text,
+                txtOrgaoEmisor.Text, txtUfEmissor.Text, txtTelefone.Text, txtCep.Text, txtEndereco.Text, txtContatoEmergencia.Text,
+                txtFoneEmergencia.Text, txtEtnia.Text, txtEstadoCivil.Text, txtReligiao.Text, txtParticipaGrupo.Text, txtQualGrupo.Text,
+                txtTemFIlhos.Text, txtQtsFilhos.Text, txtNetos.Text, txtQtsNetos.Text, txtIndigenas.Text, txtReservaIndigena.Text,
+                txtQuilombola.Text, txtComunidade.Text, txtEstrangeiro.Text, txtPais.Text, txtMoraComQuem.Text, txtAposentado.Text, txtSituacaoFinanceira.Text,
+                txtMEdiaSalarial.Text, txtProfissao.Text, txtMoradia.Text, txtAdmFinanca.Text, txtTipoTransport.Text, txtAdmFinancaTerceiro.Text, txtEscolaridade.Text,
+                txtFuma.Text, txtBebe.Text, txtSituacao.Text, txtAutonomia.Text, txtHipertenso.Text, txtCardiaco.Text, txtDiabetico.Text, txtAsma.Text, txtHistoricoCancer.Text,
+                txtColesterol.Text, txtEpletico.Text, txtMedicamento.Text, txtQualMEdicamento.Text, txtDeprecao.Text, txtAlergico.Text, txtArtose.Text, txtOsteoporose.Text,
+                txtRenais.Text, txtAlzheimer.Text, txtParkinson.Text,txtOutraDoenca.Text,txtAtividadeFisic.Text,txtQualAtividade.Text);
             rel.ShowDialog();
 
             //Esse evento faz a inserção no banco
@@ -192,6 +196,7 @@ namespace R5Ficha.MVC.View
         {
             ModelOficina.InserirOficina(txtOficina.Text);
             ModelOficina.GetOficina(dbOficina);
+            txtOficina.Text = null;
         }
         private void dbOficina_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -206,6 +211,7 @@ namespace R5Ficha.MVC.View
             ModelOficina.GetOficina(dbOficina);
             btNovoOficina.Enabled = true;
             btSalvarOficina.Enabled = true;
+            txtOficina.Text = null;
         }
         private void btEditarOficina_Click(object sender, EventArgs e)
         {
@@ -213,6 +219,7 @@ namespace R5Ficha.MVC.View
             ModelOficina.GetOficina(dbOficina);
             btNovoOficina.Enabled = true;
             btSalvarOficina.Enabled = true;
+            txtOficina.Text = null;
         }
         private void dbOficina_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -220,6 +227,16 @@ namespace R5Ficha.MVC.View
             txtOficina.Text = dbOficina.CurrentRow.Cells[1].Value.ToString();
             btNovoOficina.Enabled = false;
             btSalvarOficina.Enabled = false;
+        }
+        private void btNovoOficina_Click(object sender, EventArgs e)
+        {
+            txtOficina.Text = null;
+        }
+        private void btCancelaroficina_Click(object sender, EventArgs e)
+        {
+            txtOficina.Text = null;
+            btNovoOficina.Enabled = true;
+            btSalvarOficina.Enabled = true;
         }
     }
 }

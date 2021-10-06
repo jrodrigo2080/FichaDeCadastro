@@ -29,36 +29,38 @@ namespace R5Ficha.MVC.View
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.panel3 = new System.Windows.Forms.Panel();
             this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.btSalvarFicha = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tbFichaCadastro = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.btExportar = new MaterialSkin.Controls.MaterialButton();
             this.materialTextBox224 = new MaterialSkin.Controls.MaterialTextBox2();
             this.tbFicha = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtNome = new MaterialSkin.Controls.MaterialTextBox2();
             this.btEditar = new MaterialSkin.Controls.MaterialButton();
             this.btNovo = new MaterialSkin.Controls.MaterialButton();
             this.btCancelar = new MaterialSkin.Controls.MaterialButton();
@@ -67,9 +69,8 @@ namespace R5Ficha.MVC.View
             this.tbUsuario = new System.Windows.Forms.DataGridView();
             this.txtConfSenha = new MaterialSkin.Controls.MaterialTextBox();
             this.txtSenha = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNome = new MaterialSkin.Controls.MaterialTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.txtOficina = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtOficina = new MaterialSkin.Controls.MaterialTextBox2();
             this.dbOficina = new System.Windows.Forms.DataGridView();
             this.btEditarOficina = new MaterialSkin.Controls.MaterialButton();
             this.btNovoOficina = new MaterialSkin.Controls.MaterialButton();
@@ -183,10 +184,11 @@ namespace R5Ficha.MVC.View
             this.txtCardiaco = new MaterialSkin.Controls.MaterialCheckbox();
             this.txtHipertenso = new MaterialSkin.Controls.MaterialCheckbox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.materialTabControl1.SuspendLayout();
+            this.tbFichaCadastro.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbFicha)).BeginInit();
@@ -214,7 +216,7 @@ namespace R5Ficha.MVC.View
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.177033F));
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.82297F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(1288, 836);
+            tableLayoutPanel1.Size = new System.Drawing.Size(1288, 835);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // panel3
@@ -232,7 +234,7 @@ namespace R5Ficha.MVC.View
             // materialTextBox21
             // 
             this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.materialTextBox21.Depth = 0;
             this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox21.HideSelection = true;
@@ -321,29 +323,31 @@ namespace R5Ficha.MVC.View
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
             // 
-            // materialTabControl1
+            // tbFichaCadastro
             // 
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Controls.Add(this.tabPage3);
-            this.materialTabControl1.Controls.Add(this.tabPage4);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTabControl1.Location = new System.Drawing.Point(3, 24);
-            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl1.Multiline = true;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1302, 868);
-            this.materialTabControl1.TabIndex = 0;
+            this.tbFichaCadastro.Controls.Add(this.tabPage1);
+            this.tbFichaCadastro.Controls.Add(this.tabPage2);
+            this.tbFichaCadastro.Controls.Add(this.tabPage3);
+            this.tbFichaCadastro.Controls.Add(this.tabPage4);
+            this.tbFichaCadastro.Depth = 0;
+            this.tbFichaCadastro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbFichaCadastro.ImageList = this.imageList1;
+            this.tbFichaCadastro.Location = new System.Drawing.Point(3, 24);
+            this.tbFichaCadastro.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbFichaCadastro.Multiline = true;
+            this.tbFichaCadastro.Name = "tbFichaCadastro";
+            this.tbFichaCadastro.SelectedIndex = 0;
+            this.tbFichaCadastro.Size = new System.Drawing.Size(1302, 868);
+            this.tbFichaCadastro.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.ImageKey = "icons8_home_32.png";
+            this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1294, 842);
+            this.tabPage1.Size = new System.Drawing.Size(1294, 841);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -352,15 +356,13 @@ namespace R5Ficha.MVC.View
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.materialButton5);
-            this.panel1.Controls.Add(this.materialButton4);
             this.panel1.Controls.Add(this.materialButton2);
             this.panel1.Controls.Add(this.btExportar);
             this.panel1.Controls.Add(this.materialTextBox224);
             this.panel1.Controls.Add(this.tbFicha);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(3, 19);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1288, 836);
+            this.panel1.Size = new System.Drawing.Size(1288, 820);
             this.panel1.TabIndex = 0;
             // 
             // materialButton5
@@ -383,27 +385,6 @@ namespace R5Ficha.MVC.View
             this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton5.UseAccentColor = false;
             this.materialButton5.UseVisualStyleBackColor = true;
-            // 
-            // materialButton4
-            // 
-            this.materialButton4.AccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(129)))));
-            this.materialButton4.AutoSize = false;
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(986, 35);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.materialButton4.Size = new System.Drawing.Size(65, 36);
-            this.materialButton4.TabIndex = 5;
-            this.materialButton4.Text = "Novo";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
             // 
             // materialButton2
             // 
@@ -451,7 +432,7 @@ namespace R5Ficha.MVC.View
             // materialTextBox224
             // 
             this.materialTextBox224.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox224.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox224.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.materialTextBox224.Depth = 0;
             this.materialTextBox224.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox224.HideSelection = true;
@@ -469,7 +450,7 @@ namespace R5Ficha.MVC.View
             this.materialTextBox224.SelectionLength = 0;
             this.materialTextBox224.SelectionStart = 0;
             this.materialTextBox224.ShortcutsEnabled = true;
-            this.materialTextBox224.Size = new System.Drawing.Size(976, 48);
+            this.materialTextBox224.Size = new System.Drawing.Size(1047, 48);
             this.materialTextBox224.TabIndex = 2;
             this.materialTextBox224.TabStop = false;
             this.materialTextBox224.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -480,50 +461,51 @@ namespace R5Ficha.MVC.View
             // 
             this.tbFicha.AllowUserToAddRows = false;
             this.tbFicha.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            this.tbFicha.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.Blue;
+            this.tbFicha.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
             this.tbFicha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbFicha.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbFicha.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbFicha.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
             this.tbFicha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbFicha.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbFicha.DefaultCellStyle = dataGridViewCellStyle45;
             this.tbFicha.Location = new System.Drawing.Point(3, 80);
             this.tbFicha.Name = "tbFicha";
             this.tbFicha.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbFicha.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbFicha.RowHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.tbFicha.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFicha.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Blue;
             this.tbFicha.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Blue;
-            this.tbFicha.Size = new System.Drawing.Size(1282, 753);
+            this.tbFicha.Size = new System.Drawing.Size(1282, 737);
             this.tbFicha.TabIndex = 1;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.txtNome);
             this.tabPage2.Controls.Add(this.btEditar);
             this.tabPage2.Controls.Add(this.btNovo);
             this.tabPage2.Controls.Add(this.btCancelar);
@@ -532,13 +514,41 @@ namespace R5Ficha.MVC.View
             this.tabPage2.Controls.Add(this.tbUsuario);
             this.tabPage2.Controls.Add(this.txtConfSenha);
             this.tabPage2.Controls.Add(this.txtSenha);
-            this.tabPage2.Controls.Add(this.txtNome);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.ImageKey = "icons8_user.ico";
+            this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1294, 842);
+            this.tabPage2.Size = new System.Drawing.Size(1291, 841);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cadastro Usuário";
+            // 
+            // txtNome
+            // 
+            this.txtNome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNome.Depth = 0;
+            this.txtNome.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNome.HideSelection = true;
+            this.txtNome.Hint = "Nome";
+            this.txtNome.LeadingIcon = null;
+            this.txtNome.Location = new System.Drawing.Point(7, 36);
+            this.txtNome.MaxLength = 32767;
+            this.txtNome.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.PasswordChar = '\0';
+            this.txtNome.PrefixSuffixText = null;
+            this.txtNome.ReadOnly = false;
+            this.txtNome.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNome.SelectedText = "";
+            this.txtNome.SelectionLength = 0;
+            this.txtNome.SelectionStart = 0;
+            this.txtNome.ShortcutsEnabled = true;
+            this.txtNome.Size = new System.Drawing.Size(584, 48);
+            this.txtNome.TabIndex = 9;
+            this.txtNome.TabStop = false;
+            this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNome.TrailingIcon = null;
+            this.txtNome.UseSystemPasswordChar = false;
             // 
             // btEditar
             // 
@@ -654,51 +664,51 @@ namespace R5Ficha.MVC.View
             // 
             this.tbUsuario.AllowUserToAddRows = false;
             this.tbUsuario.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Blue;
-            this.tbUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.Blue;
+            this.tbUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle47;
             this.tbUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.tbUsuario.BackgroundColor = System.Drawing.Color.White;
             this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.tbUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbUsuario.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbUsuario.DefaultCellStyle = dataGridViewCellStyle49;
             this.tbUsuario.GridColor = System.Drawing.Color.White;
             this.tbUsuario.Location = new System.Drawing.Point(7, 149);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.tbUsuario.RowHeadersWidth = 60;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Blue;
-            this.tbUsuario.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.Blue;
+            this.tbUsuario.RowsDefaultCellStyle = dataGridViewCellStyle51;
             this.tbUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tbUsuario.Size = new System.Drawing.Size(864, 675);
+            this.tbUsuario.Size = new System.Drawing.Size(864, 674);
             this.tbUsuario.TabIndex = 3;
             this.tbUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbUsuario_CellClick);
             // 
@@ -738,23 +748,6 @@ namespace R5Ficha.MVC.View
             this.txtSenha.Text = "";
             this.txtSenha.TrailingIcon = null;
             // 
-            // txtNome
-            // 
-            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNome.Depth = 0;
-            this.txtNome.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNome.Hint = "Nome";
-            this.txtNome.LeadingIcon = null;
-            this.txtNome.Location = new System.Drawing.Point(3, 34);
-            this.txtNome.MaxLength = 50;
-            this.txtNome.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNome.Multiline = false;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(868, 50);
-            this.txtNome.TabIndex = 0;
-            this.txtNome.Text = "";
-            this.txtNome.TrailingIcon = null;
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
@@ -765,80 +758,91 @@ namespace R5Ficha.MVC.View
             this.tabPage3.Controls.Add(this.btCancelaroficina);
             this.tabPage3.Controls.Add(this.btDeletarOficina);
             this.tabPage3.Controls.Add(this.btSalvarOficina);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.ImageKey = "icons8_pc_on_desk.ico";
+            this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1294, 842);
+            this.tabPage3.Size = new System.Drawing.Size(1294, 841);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Cadastrar Oficina";
             // 
             // txtOficina
             // 
-            this.txtOficina.BackColor = System.Drawing.Color.White;
-            this.txtOficina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOficina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtOficina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtOficina.Depth = 0;
             this.txtOficina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtOficina.HideSelection = true;
             this.txtOficina.Hint = "Oficina";
             this.txtOficina.LeadingIcon = null;
-            this.txtOficina.Location = new System.Drawing.Point(19, 25);
-            this.txtOficina.MaxLength = 50;
+            this.txtOficina.Location = new System.Drawing.Point(19, 31);
+            this.txtOficina.MaxLength = 32767;
             this.txtOficina.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtOficina.Multiline = false;
             this.txtOficina.Name = "txtOficina";
-            this.txtOficina.Size = new System.Drawing.Size(440, 50);
+            this.txtOficina.PasswordChar = '\0';
+            this.txtOficina.PrefixSuffixText = null;
+            this.txtOficina.ReadOnly = false;
+            this.txtOficina.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtOficina.SelectedText = "";
+            this.txtOficina.SelectionLength = 0;
+            this.txtOficina.SelectionStart = 0;
+            this.txtOficina.ShortcutsEnabled = true;
+            this.txtOficina.Size = new System.Drawing.Size(429, 48);
             this.txtOficina.TabIndex = 16;
-            this.txtOficina.Text = "";
+            this.txtOficina.TabStop = false;
+            this.txtOficina.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtOficina.TrailingIcon = null;
+            this.txtOficina.UseSystemPasswordChar = false;
             // 
             // dbOficina
             // 
             this.dbOficina.AllowUserToAddRows = false;
             this.dbOficina.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Blue;
-            this.dbOficina.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.Blue;
+            this.dbOficina.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
             this.dbOficina.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dbOficina.BackgroundColor = System.Drawing.Color.White;
             this.dbOficina.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dbOficina.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbOficina.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbOficina.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.dbOficina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dbOficina.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbOficina.DefaultCellStyle = dataGridViewCellStyle54;
             this.dbOficina.GridColor = System.Drawing.Color.White;
             this.dbOficina.Location = new System.Drawing.Point(17, 153);
             this.dbOficina.Name = "dbOficina";
             this.dbOficina.ReadOnly = true;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbOficina.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbOficina.RowHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.dbOficina.RowHeadersWidth = 60;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Blue;
-            this.dbOficina.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Blue;
+            this.dbOficina.RowsDefaultCellStyle = dataGridViewCellStyle56;
             this.dbOficina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dbOficina.Size = new System.Drawing.Size(442, 566);
+            this.dbOficina.Size = new System.Drawing.Size(442, 565);
             this.dbOficina.TabIndex = 15;
             this.dbOficina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbOficina_CellClick);
             this.dbOficina.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbOficina_CellContentClick);
@@ -885,6 +889,7 @@ namespace R5Ficha.MVC.View
             this.btNovoOficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btNovoOficina.UseAccentColor = false;
             this.btNovoOficina.UseVisualStyleBackColor = true;
+            this.btNovoOficina.Click += new System.EventHandler(this.btNovoOficina_Click);
             // 
             // btCancelaroficina
             // 
@@ -906,6 +911,7 @@ namespace R5Ficha.MVC.View
             this.btCancelaroficina.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btCancelaroficina.UseAccentColor = false;
             this.btCancelaroficina.UseVisualStyleBackColor = true;
+            this.btCancelaroficina.Click += new System.EventHandler(this.btCancelaroficina_Click);
             // 
             // btDeletarOficina
             // 
@@ -956,10 +962,11 @@ namespace R5Ficha.MVC.View
             this.tabPage4.BackColor = System.Drawing.Color.White;
             this.tabPage4.Controls.Add(this.tabControl1);
             this.tabPage4.Controls.Add(this.panel2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.ImageKey = "icons8_folder_32.png";
+            this.tabPage4.Location = new System.Drawing.Point(4, 23);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1294, 842);
+            this.tabPage4.Size = new System.Drawing.Size(1294, 841);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ficha de Cadastro";
             // 
@@ -972,10 +979,10 @@ namespace R5Ficha.MVC.View
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(3, 66);
+            this.tabControl1.Location = new System.Drawing.Point(58, 66);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1288, 770);
+            this.tabControl1.Size = new System.Drawing.Size(1233, 716);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage5
@@ -1014,7 +1021,7 @@ namespace R5Ficha.MVC.View
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1280, 732);
+            this.tabPage5.Size = new System.Drawing.Size(1225, 678);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Dados Pessoais           ";
             // 
@@ -1059,7 +1066,7 @@ namespace R5Ficha.MVC.View
             // txtUltimaSerie
             // 
             this.txtUltimaSerie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtUltimaSerie.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtUltimaSerie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUltimaSerie.Depth = 0;
             this.txtUltimaSerie.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtUltimaSerie.HideSelection = true;
@@ -1159,7 +1166,7 @@ namespace R5Ficha.MVC.View
             // txtTelefone
             // 
             this.txtTelefone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTelefone.Depth = 0;
             this.txtTelefone.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTelefone.HideSelection = true;
@@ -1298,7 +1305,7 @@ namespace R5Ficha.MVC.View
             // txtFoneEmergencia
             // 
             this.txtFoneEmergencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtFoneEmergencia.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtFoneEmergencia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtFoneEmergencia.Depth = 0;
             this.txtFoneEmergencia.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFoneEmergencia.HideSelection = true;
@@ -1326,7 +1333,7 @@ namespace R5Ficha.MVC.View
             // txtContatoEmergencia
             // 
             this.txtContatoEmergencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtContatoEmergencia.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtContatoEmergencia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtContatoEmergencia.Depth = 0;
             this.txtContatoEmergencia.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtContatoEmergencia.HideSelection = true;
@@ -1354,7 +1361,7 @@ namespace R5Ficha.MVC.View
             // txtEndereco
             // 
             this.txtEndereco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtEndereco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEndereco.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEndereco.Depth = 0;
             this.txtEndereco.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEndereco.HideSelection = true;
@@ -1382,7 +1389,7 @@ namespace R5Ficha.MVC.View
             // txtCep
             // 
             this.txtCep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCep.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCep.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCep.Depth = 0;
             this.txtCep.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCep.HideSelection = true;
@@ -1410,7 +1417,7 @@ namespace R5Ficha.MVC.View
             // txtOrgaoEmisor
             // 
             this.txtOrgaoEmisor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtOrgaoEmisor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtOrgaoEmisor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtOrgaoEmisor.Depth = 0;
             this.txtOrgaoEmisor.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtOrgaoEmisor.HideSelection = true;
@@ -1438,7 +1445,7 @@ namespace R5Ficha.MVC.View
             // txtCpf
             // 
             this.txtCpf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCpf.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCpf.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCpf.Depth = 0;
             this.txtCpf.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCpf.HideSelection = true;
@@ -1466,7 +1473,7 @@ namespace R5Ficha.MVC.View
             // txtRg
             // 
             this.txtRg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRg.Depth = 0;
             this.txtRg.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtRg.HideSelection = true;
@@ -1494,7 +1501,7 @@ namespace R5Ficha.MVC.View
             // txtNaturalidade
             // 
             this.txtNaturalidade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtNaturalidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNaturalidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNaturalidade.Depth = 0;
             this.txtNaturalidade.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNaturalidade.HideSelection = true;
@@ -1522,7 +1529,7 @@ namespace R5Ficha.MVC.View
             // txtNis
             // 
             this.txtNis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtNis.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNis.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNis.Depth = 0;
             this.txtNis.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNis.HideSelection = true;
@@ -1550,7 +1557,7 @@ namespace R5Ficha.MVC.View
             // txtNomeCadastro
             // 
             this.txtNomeCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtNomeCadastro.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNomeCadastro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNomeCadastro.Depth = 0;
             this.txtNomeCadastro.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNomeCadastro.HideSelection = true;
@@ -1731,7 +1738,7 @@ namespace R5Ficha.MVC.View
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1280, 732);
+            this.tabPage6.Size = new System.Drawing.Size(1280, 733);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Dados da Inclusão           ";
             // 
@@ -1817,7 +1824,7 @@ namespace R5Ficha.MVC.View
             // txtQualMEdicamento
             // 
             this.txtQualMEdicamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtQualMEdicamento.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtQualMEdicamento.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtQualMEdicamento.Depth = 0;
             this.txtQualMEdicamento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtQualMEdicamento.HideSelection = true;
@@ -1883,7 +1890,7 @@ namespace R5Ficha.MVC.View
             // txtQualAtividade
             // 
             this.txtQualAtividade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtQualAtividade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtQualAtividade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtQualAtividade.Depth = 0;
             this.txtQualAtividade.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtQualAtividade.HideSelection = true;
@@ -1949,7 +1956,7 @@ namespace R5Ficha.MVC.View
             // txtQualGrupo
             // 
             this.txtQualGrupo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtQualGrupo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtQualGrupo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtQualGrupo.Depth = 0;
             this.txtQualGrupo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtQualGrupo.HideSelection = true;
@@ -1977,7 +1984,7 @@ namespace R5Ficha.MVC.View
             // txtPais
             // 
             this.txtPais.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtPais.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPais.Depth = 0;
             this.txtPais.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPais.HideSelection = true;
@@ -2005,7 +2012,7 @@ namespace R5Ficha.MVC.View
             // txtComunidade
             // 
             this.txtComunidade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtComunidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtComunidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtComunidade.Depth = 0;
             this.txtComunidade.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtComunidade.HideSelection = true;
@@ -2033,7 +2040,7 @@ namespace R5Ficha.MVC.View
             // txtReservaIndigena
             // 
             this.txtReservaIndigena.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtReservaIndigena.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtReservaIndigena.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtReservaIndigena.Depth = 0;
             this.txtReservaIndigena.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtReservaIndigena.HideSelection = true;
@@ -2061,7 +2068,7 @@ namespace R5Ficha.MVC.View
             // txtQtsNetos
             // 
             this.txtQtsNetos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtQtsNetos.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtQtsNetos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtQtsNetos.Depth = 0;
             this.txtQtsNetos.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtQtsNetos.HideSelection = true;
@@ -2089,7 +2096,7 @@ namespace R5Ficha.MVC.View
             // txtQtsFilhos
             // 
             this.txtQtsFilhos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtQtsFilhos.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtQtsFilhos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtQtsFilhos.Depth = 0;
             this.txtQtsFilhos.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtQtsFilhos.HideSelection = true;
@@ -2452,7 +2459,7 @@ namespace R5Ficha.MVC.View
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1280, 732);
+            this.tabPage7.Size = new System.Drawing.Size(1280, 733);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Finanças";
             // 
@@ -2487,7 +2494,7 @@ namespace R5Ficha.MVC.View
             // txtMoraComQuem
             // 
             this.txtMoraComQuem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtMoraComQuem.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtMoraComQuem.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMoraComQuem.Depth = 0;
             this.txtMoraComQuem.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtMoraComQuem.HideSelection = true;
@@ -2553,7 +2560,7 @@ namespace R5Ficha.MVC.View
             // txtProfissao
             // 
             this.txtProfissao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtProfissao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtProfissao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtProfissao.Depth = 0;
             this.txtProfissao.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtProfissao.HideSelection = true;
@@ -2712,8 +2719,8 @@ namespace R5Ficha.MVC.View
             this.txtMoradia.ItemHeight = 43;
             this.txtMoradia.Items.AddRange(new object[] {
             "Selecione",
-            "SIM",
-            "NAO"});
+            "PROPRIA",
+            "ALUGADA"});
             this.txtMoradia.Location = new System.Drawing.Point(25, 182);
             this.txtMoradia.MaxDropDownItems = 4;
             this.txtMoradia.MouseState = MaterialSkin.MouseState.OUT;
@@ -2881,7 +2888,7 @@ namespace R5Ficha.MVC.View
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1280, 732);
+            this.tabPage8.Size = new System.Drawing.Size(1280, 733);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Acessibilidade e Patologias";
             // 
@@ -3008,7 +3015,7 @@ namespace R5Ficha.MVC.View
             // txtOutraDoenca
             // 
             this.txtOutraDoenca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtOutraDoenca.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtOutraDoenca.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtOutraDoenca.Depth = 0;
             this.txtOutraDoenca.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtOutraDoenca.HideSelection = true;
@@ -3235,8 +3242,17 @@ namespace R5Ficha.MVC.View
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1288, 836);
+            this.panel2.Size = new System.Drawing.Size(1288, 835);
             this.panel2.TabIndex = 2;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icons8_home_32.png");
+            this.imageList1.Images.SetKeyName(1, "icons8_folder_32.png");
+            this.imageList1.Images.SetKeyName(2, "icons8_pc_on_desk.ico");
+            this.imageList1.Images.SetKeyName(3, "icons8_user.ico");
             // 
             // FrmPrincipal
             // 
@@ -3244,11 +3260,11 @@ namespace R5Ficha.MVC.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1308, 895);
-            this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.tbFichaCadastro);
             this.DrawerAutoShow = true;
             this.DrawerIsOpen = true;
             this.DrawerShowIconsWhenHidden = true;
-            this.DrawerTabControl = this.materialTabControl1;
+            this.DrawerTabControl = this.tbFichaCadastro;
             this.DrawerWidth = 300;
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_None;
             this.Name = "FrmPrincipal";
@@ -3257,7 +3273,7 @@ namespace R5Ficha.MVC.View
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.materialTabControl1.ResumeLayout(false);
+            this.tbFichaCadastro.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tbFicha)).EndInit();
@@ -3282,12 +3298,11 @@ namespace R5Ficha.MVC.View
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private MaterialSkin.Controls.MaterialTabControl tbFichaCadastro;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView tbFicha;
-        private MaterialSkin.Controls.MaterialTextBox txtNome;
         private MaterialSkin.Controls.MaterialTextBox txtConfSenha;
         private MaterialSkin.Controls.MaterialTextBox txtSenha;
         private MaterialSkin.Controls.MaterialButton btCancelar;
@@ -3407,7 +3422,6 @@ namespace R5Ficha.MVC.View
         private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
         private MaterialSkin.Controls.MaterialButton materialButton3;
         private MaterialSkin.Controls.MaterialButton btSalvarFicha;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
         private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialButton btExportar;
         private MaterialSkin.Controls.MaterialButton materialButton5;
@@ -3418,8 +3432,10 @@ namespace R5Ficha.MVC.View
         private MaterialSkin.Controls.MaterialButton btDeletarOficina;
         private MaterialSkin.Controls.MaterialButton btSalvarOficina;
         private System.Windows.Forms.DataGridView dbOficina;
-        private MaterialSkin.Controls.MaterialTextBox txtOficina;
         private MaterialSkin.Controls.MaterialComboBox cbOficina;
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
+        private MaterialSkin.Controls.MaterialTextBox2 txtOficina;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNome;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

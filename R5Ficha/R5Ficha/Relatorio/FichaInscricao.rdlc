@@ -988,39 +988,8 @@
                               <FontWeight>Bold</FontWeight>
                             </Style>
                           </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox9</rd:DefaultName>
-                    <Top>4.80011cm</Top>
-                    <Left>0.33987cm</Left>
-                    <Height>0.47653cm</Height>
-                    <Width>9.37444cm</Width>
-                    <ZIndex>15</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <BottomBorder>
-                        <Color>Black</Color>
-                        <Style>Solid</Style>
-                        <Width>1pt</Width>
-                      </BottomBorder>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox23">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
                           <TextRun>
-                            <Value>FONE:</Value>
+                            <Value>             FONE : </Value>
                             <Style>
                               <FontSize>8pt</FontSize>
                               <FontWeight>Bold</FontWeight>
@@ -1036,25 +1005,13 @@
                         </TextRuns>
                         <Style />
                       </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value />
-                            <Style>
-                              <FontSize>8pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox9</rd:DefaultName>
                     <Top>4.80011cm</Top>
-                    <Left>9.89071cm</Left>
-                    <Height>0.47653cm</Height>
-                    <Width>6.07281cm</Width>
-                    <ZIndex>16</ZIndex>
+                    <Left>0.37516cm</Left>
+                    <Height>0.53891cm</Height>
+                    <Width>15.58833cm</Width>
+                    <ZIndex>15</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -1343,7 +1300,7 @@
                         <Top>1.61479cm</Top>
                         <Left>0.25985cm</Left>
                         <Height>0.51181cm</Height>
-                        <Width>7.78867cm</Width>
+                        <Width>7.92978cm</Width>
                         <ZIndex>5</ZIndex>
                         <Style>
                           <Border>
@@ -1466,7 +1423,7 @@
                         <Top>2.16188cm</Top>
                         <Left>0.25985cm</Left>
                         <Height>1.07625cm</Height>
-                        <Width>4.77115cm</Width>
+                        <Width>4.92517cm</Width>
                         <ZIndex>7</ZIndex>
                         <Style>
                           <Border>
@@ -1530,7 +1487,7 @@
                         <Top>2.16188cm</Top>
                         <Left>5.18502cm</Left>
                         <Height>1.07625cm</Height>
-                        <Width>5.93331cm</Width>
+                        <Width>6.10971cm</Width>
                         <ZIndex>8</ZIndex>
                         <Style>
                           <Border>
@@ -1617,7 +1574,7 @@
                     <Left>0.00945cm</Left>
                     <Height>3.55564cm</Height>
                     <Width>16.2851cm</Width>
-                    <ZIndex>17</ZIndex>
+                    <ZIndex>16</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -1627,7 +1584,7 @@
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>1.54836cm</Top>
-                <Height>8.96521cm</Height>
+                <Height>8.96522cm</Height>
                 <Width>16.30747cm</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
@@ -1640,7 +1597,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>0.03528cm</Top>
             <Left>0.24221cm</Left>
-            <Height>10.51357cm</Height>
+            <Height>10.51358cm</Height>
             <Width>16.30747cm</Width>
             <Style>
               <Border>
@@ -1697,6 +1654,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!moraComQuem.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -1728,6 +1692,13 @@
                     <TextRuns>
                       <TextRun>
                         <Value>POSSUI APOSENTADORIA:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!aposentado.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1769,6 +1740,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!situacaoFinanceira.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -1800,6 +1778,13 @@
                     <TextRuns>
                       <TextRun>
                         <Value>QUAL A SUA MÉDIA SALÁRIAL:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!mediaSalario.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1841,6 +1826,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!profissao.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -1872,6 +1864,13 @@
                     <TextRuns>
                       <TextRun>
                         <Value>MARADIA:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!moradia.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1913,6 +1912,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!admFinanca.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -1949,6 +1955,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!tipoTransporte.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -1980,6 +1993,13 @@
                     <TextRuns>
                       <TextRun>
                         <Value>SUA FINANÇA É ADMINISTRADA POR TERCEIROS?</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!fiancaTerceiro.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2065,7 +2085,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>BEBIDAS ALCOOLICAS:</Value>
+                        <Value>BEBIDAS ALCOOLICAS: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!bebe.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2101,7 +2128,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>FUMA :</Value>
+                        <Value>FUMA : </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!fuma.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2137,7 +2171,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ESCOLARIDADE:</Value>
+                        <Value>ESCOLARIDADE: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!escolaridade.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2173,7 +2214,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>SITUACAO DO ENTREVISTADO:</Value>
+                        <Value>SITUACAO DO ENTREVISTADO: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!situacao.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2209,7 +2257,21 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>AUTONOMIA E INDEPENDENCIA :</Value>
+                        <Value>AUTONOMIA E INDEPENDENCIA : </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!autonomia.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2295,7 +2357,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>HIPERTENSO:</Value>
+                        <Value>HIPERTENSO: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!hipertenso.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2331,7 +2400,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>CARDIÁCO:</Value>
+                        <Value>CARDIÁCO: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!cardiaco.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2367,7 +2443,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>DIABÉTICO:</Value>
+                        <Value>DIABÉTICO: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!diabetico.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2403,7 +2486,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ASMA:</Value>
+                        <Value>ASMA: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!asma.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2439,7 +2529,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>HISTÓRICO DE CANCÊR:</Value>
+                        <Value>HISTÓRICO DE CANCÊR: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!cancer.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2481,6 +2578,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!depressao.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -2489,7 +2593,7 @@
                 <Top>0.45075cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.47788cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
@@ -2511,7 +2615,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>COLESTEROL ELEVADO:</Value>
+                        <Value>COLESTEROL ELEVADO: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!colestorol.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2553,6 +2664,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!alergico.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -2561,7 +2679,7 @@
                 <Top>0.99919cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.47788cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
@@ -2589,15 +2707,22 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!artrose.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox54</rd:DefaultName>
-                <Top>1.51235cm</Top>
+                <Top>1.51234cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.47788cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
@@ -2625,6 +2750,13 @@
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!osteopor.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -2633,7 +2765,7 @@
                 <Top>2.06078cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.47788cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
@@ -2655,7 +2787,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ALZHEIMER:</Value>
+                        <Value>ALZHEIMER: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!alzheimer.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2669,7 +2808,7 @@
                 <Top>3.0871cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.47788cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
@@ -2691,7 +2830,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>RENAIS:</Value>
+                        <Value>RENAIS: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!renais.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2705,7 +2851,7 @@
                 <Top>2.57394cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.47788cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>12</ZIndex>
                 <Style>
                   <Border>
@@ -2727,7 +2873,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>EPLETICO(CONVULÇOES):</Value>
+                        <Value>EPLETICO(CONVULÇOES): </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!epletico.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2763,7 +2916,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>PARKINSON :</Value>
+                        <Value>PARKINSON : </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!parkinson.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2777,7 +2937,7 @@
                 <Top>3.60025cm</Top>
                 <Left>6.43345cm</Left>
                 <Height>0.51316cm</Height>
-                <Width>4.23746cm</Width>
+                <Width>4.36405cm</Width>
                 <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
@@ -2800,6 +2960,18 @@
                     <TextRuns>
                       <TextRun>
                         <Value>OUTRAS DOENÇAS:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!outraDoenca.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2832,7 +3004,28 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>FAZ USO DE MEDICAMENTOS:</Value>
+                        <Value>FAZ USO DE MEDICAMENTOS: </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!usaMedicamento.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">  </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!qualMedicamento.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -2868,7 +3061,28 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>PRATICA ATIVIDADES FÍSICAS: </Value>
+                        <Value>PRATICA ATIVIDADES FÍSICAS:  </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!praticaAtividade.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">      </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!qualAtividade.Value</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -3119,11 +3333,143 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="moraComQuem">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="aposentado">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="situacaoFinanceira">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="mediaSalario">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="profissao">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="moradia">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="admFinanca">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="tipoTransporte">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fiancaTerceiro">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="escolaridade">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fuma">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bebe">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="situacao">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="autonomia">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="hipertenso">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cardiaco">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="diabetico">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="asma">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cancer">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="colestorol">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="epletico">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="usaMedicamento">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="qualMedicamento">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="praticaAtividade">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="qualAtividade">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="depressao">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="alergico">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="artrose">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="osteopor">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="renais">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="alzheimer">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="parkinson">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="outraDoenca">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>9</NumberOfRows>
+      <NumberOfRows>17</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -3299,6 +3645,171 @@
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>8</RowIndex>
           <ParameterName>pais</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>8</RowIndex>
+          <ParameterName>moraComQuem</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>aposentado</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>situacaoFinanceira</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>mediaSalario</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>profissao</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>10</RowIndex>
+          <ParameterName>moradia</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>10</RowIndex>
+          <ParameterName>admFinanca</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>10</RowIndex>
+          <ParameterName>tipoTransporte</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>10</RowIndex>
+          <ParameterName>fiancaTerceiro</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>escolaridade</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>fuma</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>bebe</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>situacao</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>12</RowIndex>
+          <ParameterName>autonomia</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>12</RowIndex>
+          <ParameterName>hipertenso</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>12</RowIndex>
+          <ParameterName>cardiaco</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>12</RowIndex>
+          <ParameterName>diabetico</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>13</RowIndex>
+          <ParameterName>asma</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>13</RowIndex>
+          <ParameterName>cancer</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>13</RowIndex>
+          <ParameterName>colestorol</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>13</RowIndex>
+          <ParameterName>epletico</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>14</RowIndex>
+          <ParameterName>usaMedicamento</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>14</RowIndex>
+          <ParameterName>qualMedicamento</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>14</RowIndex>
+          <ParameterName>praticaAtividade</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>14</RowIndex>
+          <ParameterName>qualAtividade</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>15</RowIndex>
+          <ParameterName>depressao</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>15</RowIndex>
+          <ParameterName>alergico</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>15</RowIndex>
+          <ParameterName>artrose</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>15</RowIndex>
+          <ParameterName>osteopor</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>16</RowIndex>
+          <ParameterName>renais</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>16</RowIndex>
+          <ParameterName>alzheimer</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>16</RowIndex>
+          <ParameterName>parkinson</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>16</RowIndex>
+          <ParameterName>outraDoenca</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

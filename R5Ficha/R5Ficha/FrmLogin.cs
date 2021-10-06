@@ -1,4 +1,5 @@
-﻿using R5Ficha.MVC.Model;
+﻿using FirebirdSql.Data.FirebirdClient;
+using R5Ficha.MVC.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,8 +22,30 @@ namespace R5Ficha
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            Hide();
-            new MVC.View.FrmPrincipal().Show();            
+            using (FbConnection con = ModelConexao.GetInstancia().GetConexao())
+            {
+                try
+                {
+                    con.Open();
+                    var sql = $"select nome as NOME, senha AS SENHA from USUARIO where nome = '{txtUser.Text}' and senha = '{txtPas.Text}'";
+                    FbCommand comando = new FbCommand(sql, con);
+                    FbDataAdapter da = new FbDataAdapter(comando);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    if (dt.Rows.Count > 0)
+                    {
+                        Hide();
+                        new MVC.View.FrmPrincipal().Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário não encontrado! ");
+                    }
+                }
+                catch (Exception ex) { MessageBox.Show("Erro ao Fazer Login " + ex.Message); }
+                finally { con.Close(); }
+
+            }         
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
