@@ -305,3 +305,4 @@ C:\R5Soft\FichaDeCadastro\R5Ficha\R5Ficha\obj\Debug\R5Ficha.csproj.CoreCompileIn
 C:\R5Soft\FichaDeCadastro\R5Ficha\R5Ficha\obj\Debug\R5Ficha.csproj.CopyComplete
 C:\R5Soft\FichaDeCadastro\R5Ficha\R5Ficha\obj\Debug\R5Ficha.exe
 C:\R5Soft\FichaDeCadastro\R5Ficha\R5Ficha\obj\Debug\R5Ficha.pdb
+C:\R5Soft\FichaDeCadastro\R5Ficha\R5Ficha\obj\Debug\R5Ficha.csproj.AssemblyReference.cache
