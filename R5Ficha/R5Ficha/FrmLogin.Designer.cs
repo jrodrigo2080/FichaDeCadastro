@@ -66,6 +66,7 @@ namespace R5Ficha
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtUser.TrailingIcon = null;
             this.txtUser.UseSystemPasswordChar = false;
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             // 
             // txtPas
             // 
@@ -94,6 +95,7 @@ namespace R5Ficha
             this.txtPas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPas.TrailingIcon = null;
             this.txtPas.UseSystemPasswordChar = true;
+            this.txtPas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPas_KeyPress);
             // 
             // materialButton1
             // 

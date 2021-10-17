@@ -10,8 +10,7 @@ using System.Windows.Forms;
 namespace R5Ficha.MVC.Model
 {
     public class ModelFicha
-    {
-             
+    {             
         public static void InserirFicha(string oficina,
             string inclusao,string data,string atualizacao,string dataCriacao, string nome, string dataNasc,
             string sexo, string nis, string cidade, string uf,string rg,string cpf, string emissor, string telefone,
@@ -64,7 +63,6 @@ namespace R5Ficha.MVC.Model
                 }
             }
         }
-
 
         public static void UpdateFicha(string oficina,
             string inclusao, string data, string atualizacao, string dataCriacao, string nome, string dataNasc,
@@ -121,6 +119,7 @@ namespace R5Ficha.MVC.Model
                 }
             }
         }
+
         public static void DeleteFicha(string codigo)
         {
             using (FbConnection con = ModelConexao.GetInstancia().GetConexao())
@@ -144,6 +143,7 @@ namespace R5Ficha.MVC.Model
 
             }
         }
+
         public static void GetFicha(DataGridView tabela)
         {
             using (FbConnection con = ModelConexao.GetInstancia().GetConexao())

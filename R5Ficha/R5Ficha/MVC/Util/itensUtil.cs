@@ -51,5 +51,30 @@ namespace R5Ficha.MVC.Util
 
             }
         }
+        public static void eventoEnter(object sender, KeyPressEventArgs e, TextBox campoSeguinte)
+        {
+            if(e.KeyChar == 13)
+            {
+                campoSeguinte.Focus();
+            }
+        }
+        public static void buscarGenerico(DataGridView tabela, string sql)
+        {
+            using (FbConnection con = ModelConexao.GetInstancia().GetConexao())
+            {
+                try
+                {
+                    con.Open();
+                    FbCommand comando = new FbCommand(sql, con);
+                    FbDataAdapter dataAdapter = new FbDataAdapter(comando);
+                    DataTable lista = new DataTable();
+                    dataAdapter.Fill(lista);
+                    tabela.DataSource = lista;
+                }
+                catch (Exception e) { MessageBox.Show("Erro ao Listar " + e.Message); }
+                finally { con.Close(); }
+
+            }
+        }
     }    
 }

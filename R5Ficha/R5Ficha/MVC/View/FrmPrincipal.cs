@@ -1,4 +1,5 @@
 ﻿using R5Ficha.MVC.Model;
+using R5Ficha.MVC.Util;
 using R5Ficha.Relatorio;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace R5Ficha.MVC.View
             organizaTbUsuario();
             organizaTbFicha();
             organizaTbOficina();
-            Util.itensUtil.preencheComboBoxBotoes(cbOficina);
+            Util.itensUtil.preencheComboBoxBotoes(cbOficina);            
         }
         string codigo ="";
         string codigoOficina="";
@@ -237,6 +238,104 @@ namespace R5Ficha.MVC.View
             txtOficina.Text = null;
             btNovoOficina.Enabled = true;
             btSalvarOficina.Enabled = true;
+        }
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                txtSenha.Select();
+            }
+        }
+        private void tabUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void txtSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtConfSenha.Select();
+            }
+        }
+        private void txtInclusao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtData.Focus();
+            }
+        }
+        private void txtData_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtAtualizacao.Focus();
+            }
+        }
+        private void txtAtualizacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtDataInclusao.Select();
+            }
+        }
+        private void txtDataInclusao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtOficina.Select();
+            }
+        }
+        private void cbOficina_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtNomeCadastro.Text = "";
+                txtNomeCadastro.isFocused = true;
+            } 
+        }
+        private void txtNomeCadastro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                txtDataNasc.Focus();
+            }
+            
+        }
+        private void txtDataNasc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtSexo.Focus();
+            }
+        }
+        private void txtSexo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                txtNis.Select();
+            }
+        }
+        private void txtNis_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                txtTelefone.Focus();
+            }
+                
+        }
+        private void txtTelefone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+              txtCep.Focus();
+        }
+        private void txtOficina_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //itensUtil.buscarGenerico(dbOficina, $"select id_oficina as CODIGO, nome as NOME from OFICINA where nome like '%{txtOficina.Text}%'");
+        }
+
+        private void materialTextBox224_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            itensUtil.buscarGenerico(tbFicha, $"SELECT ID as CODIGO, nome as NOME, TELEFONE, SEXO, ENDERECO, CIDADE as NATURALIDADE from FICHA where nome like '%{materialTextBox224.Text}%'");
         }
     }
 }
