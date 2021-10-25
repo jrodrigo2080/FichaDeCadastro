@@ -151,7 +151,7 @@ namespace R5Ficha.MVC.Model
                 try
                 {
                     con.Open();
-                    var sql = "SELECT ID as CODIGO, nome as NOME, TELEFONE, SEXO, ENDERECO, CIDADE as NATURALIDADE from FICHA";
+                    var sql = "SELECT ID as CODIGO, nome as NOME, TELEFONE, NIS,SITUACAO from FICHA ORDER BY NOME";
                     FbCommand comando = new FbCommand(sql, con);
                     FbDataAdapter dataAdapter = new FbDataAdapter(comando);
                     DataTable lista = new DataTable();

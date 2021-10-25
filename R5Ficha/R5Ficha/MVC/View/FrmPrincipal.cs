@@ -197,6 +197,7 @@ namespace R5Ficha.MVC.View
         {
             ModelOficina.InserirOficina(txtOficina.Text);
             ModelOficina.GetOficina(dbOficina);
+            Util.itensUtil.preencheComboBoxBotoes(cbOficina);
             txtOficina.Text = null;
         }
         private void dbOficina_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -210,6 +211,7 @@ namespace R5Ficha.MVC.View
         {
             ModelOficina.DeleteOficina(codigoOficina);
             ModelOficina.GetOficina(dbOficina);
+            Util.itensUtil.preencheComboBoxBotoes(cbOficina);
             btNovoOficina.Enabled = true;
             btSalvarOficina.Enabled = true;
             txtOficina.Text = null;
@@ -220,6 +222,7 @@ namespace R5Ficha.MVC.View
             ModelOficina.GetOficina(dbOficina);
             btNovoOficina.Enabled = true;
             btSalvarOficina.Enabled = true;
+            Util.itensUtil.preencheComboBoxBotoes(cbOficina);
             txtOficina.Text = null;
         }
         private void dbOficina_CellClick(object sender, DataGridViewCellEventArgs e)
